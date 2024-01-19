@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+    font-family: JetBrains Mono;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./pexels-rdne-stock-project-7888981.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+
+.to-do {
+  width: 100%;
+  max-width: 540px;
+  background-color: rgba(205, 199, 199, 0.6);
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.to-do h2 {
+  color: blue;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  width: 50%;
+}
+
+#add {
+  border:none;
+  outline: none;
+  width: 60%;
+  
+  padding: 16px 50px;
+  color: white;
+  background-color: #f37221;
+  /* background-image: linear-gradient(to right, red, purple, blue, red); */
+  font-weight: 800;
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 40px;
+
+  transition: all 0.3s ease;
+  animation-name: border-animation;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+#add:hover {
+  color: aqua;
+  opacity: .6;
+}
+
+
+#clear {
+  position: absolute;
+  left: 80%;
+  top: 2.5em;
+  padding: 9px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #e040fb, #00bcd4);
+  cursor: pointer;
+  transition: 0.5s;
+}
+#clear:hover {
+  opacity: 0.7;
+}
+ul li {
+  /* list-style-position: inside; */
+  /* list-style-image: url(./icons8-checkmark-16.png); */
+  list-style: none;
+  font-weight: 900;
+  font-size: 24px;
+  border-radius: 30px;
+  padding: 12px 8px 12px 50px;
+  line-height: 40px;
+  user-select: none;
+  cursor: pointer;
+  background-color: #363739;
+  text-transform: capitalize;
+  color: #edeef0;
+
+  position: relative;
+  margin-top: 1.5em;
+}
+
+ul li button{
+  font-family: JetBrains Mono;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2em;
+  padding: 5px 18px 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 800;
+  color: white;
+  cursor: pointer;
+  transition: .6s;
+
+  
+}
+ul li .edit-btn{
+  background-color: rgb(215, 86, 108);
+}
+
+ul li .del-btn{
+  background-color: rgba(223, 34, 34, 0.816);
+}
+ul li button:hover{
+  opacity: .8;
+  color: lightgrey;
+}
+
+
+
